@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="student" class="injectCollections.Student">
+        
+        <property name="id" value="1"></property>
+        
+        <property name="name" value="abhi"></property>
+        
+        <property name="courses">
+            <list>
+                <value>sub1</value>
+                <value>sub2</value>
+                <value>sub3</value>
+            </list>
+        </property>
+
+        <property name="mobileNo">
+            <set>
+                <value>123456</value>
+                <value>123456</value>
+                <value>654321</value>
+            </set>
+        </property>
+        
+        <property name="feeDetails">
+            <map>
+                <entry key="sub1" value="10000"></entry>
+                <entry key="sub2" value="20000"></entry>
+                <entry key="sub3" value="30000"></entry>
+            </map>
+        </property>
+
+
+        <property name="properties">
+            <props>
+                <prop key="branch1">50000</prop>
+                <prop key="branch2">20000</prop>
+            </props>
+        </property>
+    </bean>
+
+</beans>

@@ -1,4 +1,4 @@
-package InjectingUsingRef;
+package injectingUsingRef;
 
 public class Address {
     private String houseNo;

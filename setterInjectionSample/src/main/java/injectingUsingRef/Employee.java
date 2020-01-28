@@ -1,4 +1,4 @@
-package InjectingUsingRef;
+package injectingUsingRef;
 
 public class Employee {
 
