@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="parentCar" class="inheritanceCar.Car" abstract="true" >
+        <property name="engineType" value="4Cylinder"></property>
+        <property name="engineModel" value="3.2TL"></property>
+    </bean>
+
+    <bean id="ritz" class="inheritanceCar.Car" parent="parentCar">
+        <property name="name" value="ritz"></property>
+        <property name="id" value="1"></property>
+    </bean>
+
+    <bean id="maruthi" class="inheritanceCar.Car" parent="parentCar">
+        <property name="name" value="maruthi"></property>
+        <property name="id" value="2"></property>
+    </bean>
+
+</beans>
