@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<!--    <bean id="helloMessage" class="springBeanLifeCycle.HelloBean" init-method="myInit" destroy-method="myDestroy">
+        <property name="message" value="Hello Bean Message"></property>
+    </bean>-->
+    <bean class="org.springframework.context.annotation.CommonAnnotationBeanPostProcessor" />
+    <bean id="helloMessage" class="springBeanLifeCycle.HelloBean">
+        <property name="message" value="Hello Bean Message"></property>
+    </bean>
+</beans>
