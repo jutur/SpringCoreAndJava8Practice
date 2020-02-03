@@ -14,7 +14,8 @@
         <property name="country" value="USA"> </property>
     </bean>
 
-    <bean id="employee" class="injectingUsingRef.Employee">
+    //first creates address object and then employee object as we are using depends on
+    <bean id="employee" class="injectingUsingRef.Employee" depends-on="address">
         <property name="name" value="abhi"> </property>
         <property name="id" value="1"> </property>
         <property name="address" ref="address"> </property>
